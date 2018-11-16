@@ -2,7 +2,7 @@ const exec = require('child_process').exec;
 const fs = require('fs');
 
 var tests = process.env.TESTS;
-var command = "env TESTS="+tests+" mocha --opts .guides/cis54x/mocha.opts .guides/cis54x/runner.js";
+var command = "env TESTS="+tests+" mocha --opts .guides/cis54x-codio-packages/mocha.opts .guides/cis54x-codio-packages/runner.js";
 
 var child = exec(command, (error, stdout, stderr)=>{
 	if (error) {
